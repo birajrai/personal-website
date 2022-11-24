@@ -6,7 +6,7 @@ function Home() {
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-gray-900 px-10 dark:bg-white md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+          <nav className="py-10 mb-12 flex justify-between text-gray-200 dark:text-gray-800">
             <h1 className="font-burtons text-xl">biraj</h1>
             <ul className="flex items-center">
               <li>
@@ -52,10 +52,10 @@ function Home() {
               </span>
             </div>
             <div className="text-white">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Languages{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 English, Nepali
               </span>
             </div>
