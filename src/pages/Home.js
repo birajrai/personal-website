@@ -60,10 +60,10 @@ function Home() {
               </span>
             </div>
             <div className="text-white">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Pronouns{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 he/him
               </span>
             </div>
