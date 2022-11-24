@@ -28,26 +28,26 @@ function Home() {
 
           <div className="text-center">
             <div className="text-white">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Name{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Biraj
               </span>
             </div>
             <div className="text-white ">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Age{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 16
               </span>
             </div>
             <div className="text-white ">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Location{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Hetauda, Nepal
               </span>
             </div>
@@ -68,18 +68,18 @@ function Home() {
               </span>
             </div>
             <div className="text-white">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Timezone{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 UTC
               </span>
             </div>
             <div className="text-white">
-              <span className="font-bold text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="font-bold text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Programming Languages{" "}
               </span>
-              <span className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              <span className="text-md py-2 leading-8 text-gray-200 dark:text-gray-800">
                 Javascript
               </span>
             </div>
