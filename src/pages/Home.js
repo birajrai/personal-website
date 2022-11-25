@@ -17,7 +17,7 @@ function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-blue-500 text- to-blue-700 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-blue-700 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="https://discord.gg/n4K3B7pDVF"
                 >
                   Discord
