@@ -17,7 +17,7 @@ const Home = () => {
             Hello, my name is Biraj. Usually called Neppixel ( at the internet
             ). Born and live in Nepal.
           </p>
-          <p>I am a {age} year(s) old self-taught programmer who is currently a student.</p>
+          <p>I am a {age} year(s) old self-taught developer who is currently a student.</p>
           <p>
             I've worked with numberous techonlogies and projects, but I still
             think of myself as a humble beginner and I want to learn more and
