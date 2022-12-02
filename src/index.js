@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
 
-import './index.css'
+import "./index.css";
 
 export default function App() {
   return (

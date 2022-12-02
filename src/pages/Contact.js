@@ -1,8 +1,6 @@
-
 const Contact = () => {
   return (
-    <div className="fullwh">
-
+    <div>
       <h1>Contact</h1>
     </div>
   );
