@@ -1,13 +1,13 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Gallery from "./pages/Gallery";
-import NoPage from "./pages/NoPage";
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+import NoPage from "./components/NoPage";
 
-import "./index.css";
+import "./index.scss";
 
 export default function App() {
   return (

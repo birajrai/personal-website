@@ -1,17 +1,23 @@
+let dateFns = require("date-fns")
+
+let d = '31/01/2006'; // 10 Mar 1998
+let date = dateFns.parse(d, 'dd/MM/yyyy', new Date());
+let age = dateFns.differenceInYears(new Date(), date);
+
 const Home = () => {
   return (
-    <div>
+    <div className="section">
       {/* About Me Start */}
       <div>
         <div>
-          <h1>About Me</h1>
+          <h1>About Me </h1>
         </div>
         <div>
           <p>
             Hello, my name is Biraj. Usually called Neppixel ( at the internet
             ). Born and live in Nepal.
           </p>
-          <p>I am a self-taught programmer who is currently a student.</p>
+          <p>I am a {age} year(s) old self-taught programmer who is currently a student.</p>
           <p>
             I've worked with numberous techonlogies and projects, but I still
             think of myself as a humble beginner and I want to learn more and

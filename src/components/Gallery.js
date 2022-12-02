@@ -1,6 +1,6 @@
 const Gallery = () => {
   return (
-    <div>
+    <div className="section">
       <h1>Gallery</h1>
     </div>
   );
