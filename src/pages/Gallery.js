@@ -1,6 +1,6 @@
 const Gallery = () => {
   return (
-    <div className="bg-slate-800 text-slate-100">
+    <div className="fullwh">
       <h1>Gallery</h1>
       <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
   <div>
