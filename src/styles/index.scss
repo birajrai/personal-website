@@ -1,0 +1,47 @@
+$darkNav: #262f41;
+$darkBg: #1a202c;
+$white: #ffffff;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+body {
+
+    background: $darkBg;
+    color: $white;
+}
+
+.nav {
+    border-radius: 50px;
+    background-color: $darkNav;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-lists {
+    display: flex;
+    justify-content: space-around;
+    // text-indent: 50px;
+    list-style-type: none;
+}
+
+.nav-text {
+    color: $white;
+    text-decoration: none;
+}
+
+.nav-items {
+    margin: 4px;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+    font-size: 1rem;
+    color: $white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}

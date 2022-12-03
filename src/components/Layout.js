@@ -9,6 +9,9 @@ const Layout = () => {
             <Link className="nav-text fa-house-blank" to="/">/</Link>
           </li>
           <li className="nav-items">
+            <Link className="nav-text" to="/about">/about</Link>
+          </li>
+          <li className="nav-items">
             <Link className="nav-text" to="/gallery">/gallery</Link>
           </li>
           <li className="nav-items">
