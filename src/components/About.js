@@ -31,7 +31,7 @@ const About = () => {
       {/* Skills Start */}
       <div>
         {/* Skills Languages Start */}
-        <div id="languages">
+        <div id="languages" className="languages">
           <h1>Languages</h1>
           <p>Javascript</p>
           <p>Java</p>
@@ -41,7 +41,7 @@ const About = () => {
         {/* Skills Languages End */}
 
         {/* Skills Tools Start */}
-        <div id="languages">
+        <div id="tools" className="tools">
           <h1>Tools</h1>
           <p>Visual Studio Code</p>
           <p>Intellij IDEA (aka JetBrain)</p>

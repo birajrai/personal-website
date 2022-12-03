@@ -11,6 +11,8 @@ import NoPage from "./components/NoPage";
 
 import "./styles/index.scss";
 import "./styles/home.scss"
+import "./styles/gallery.scss"
+import "./styles/contact.scss"
 
 export default function App() {
   return (
