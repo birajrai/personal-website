@@ -23,7 +23,7 @@ const About = () => {
             think of myself as a humble beginner and I want to learn more and
             get better.
           </p>
-          <p>Having weird obsession with Discord.</p>
+          <p>Having weird obsession with <a href="https://www.kritika.tk/" target="_blank">felix</a>.</p>
         </div>
       </div>
       {/* About Me End */}
