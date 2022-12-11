@@ -1,17 +1,24 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import About from "./components/About";
-import Home from "./components/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import NoPage from "./components/NoPage";
 import "./styles/index.scss";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <Layout/>
-    <Home />
-    <About />
-  </React.StrictMode>
-);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(<App />);
