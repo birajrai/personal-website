@@ -20,20 +20,46 @@ body {
     background-color: $darkNav;
     margin: 10px;
     padding: 10px;
+
+    .nav-lists {
+        display: flex;
+        justify-content: space-around;
+        // text-indent: 50px;
+        list-style-type: none;
+
+        .nav-items {
+            margin: 4px;
+        }
+
+        .nav-text {
+            color: $white;
+            text-decoration: none;
+        }
+    }
 }
 
-.nav-lists {
-    display: flex;
-    justify-content: space-around;
-    // text-indent: 50px;
-    list-style-type: none;
-}
+.home {
+    .hero {
+        display: flex;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
-.nav-text {
-    color: $white;
-    text-decoration: none;
-}
+    .container {
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
 
-.nav-items {
-    margin: 4px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+    }
 }
