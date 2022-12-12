@@ -14,6 +14,14 @@ body {
     color: $white;
 }
 
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: red;
+}
+
 .nav {
     border-radius: 50px;
     background-color: $darkNav;
@@ -66,4 +74,23 @@ body {
         bottom: 0;
 
     }
+}
+
+.about {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .about-title {
+        font-weight: bold;
+    }
+
+    .about-p {
+        justify-content: center;
+        color: aliceblue;
+
+
+    }
+
 }

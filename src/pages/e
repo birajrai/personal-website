@@ -1,0 +1,24 @@
+  {/* Skills Start */}
+      <div>
+        {/* Skills Languages Start */}
+        <div id="languages" className="languages">
+          <h1>Languages</h1>
+          <p>Javascript</p>
+          <p>Java</p>
+          <p>TypeScript</p>
+          <p>YAML</p>
+        </div>
+        {/* Skills Languages End */}
+
+        {/* Skills Tools Start */}
+        <div id="tools" className="tools">
+          <h1>Tools</h1>
+          <p>Visual Studio Code</p>
+          <p>Intellij IDEA (aka JetBrain)</p>
+          <p>Git</p>
+          <p>Vim & Neovim</p>
+          <p>Figma ( no-idea )</p>
+        </div>
+        {/* Skills Tools End */}
+      </div>
+      {/* Skills End */}
