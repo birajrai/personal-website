@@ -31,6 +31,7 @@ body {
         }
 
         .nav-text {
+            user-select: none;
             color: $white;
             text-decoration: none;
         }
