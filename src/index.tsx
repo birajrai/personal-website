@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import "./styles/index.scss";
+import "./styles/cursor.scss"
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 
