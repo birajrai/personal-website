@@ -9,7 +9,7 @@ import Gallery from "./pages/Gallery";
 
 // Stylings
 import "./styles/index.scss";
-import "./styles/cursor.scss";
+// import "./styles/cursor.scss";
 export default function App() {
   return (
     <BrowserRouter>
