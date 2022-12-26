@@ -19,7 +19,6 @@ const About = () => {
           <p>
             Hi 👋,I'm <span className="name-span">Biraj Rai</span>
           </p>
-          {/* <img src={code} alt="" /> */}
           <p>Hello I'm {age}year(s) old, full-stacked developer based in Nepal.</p>
           <p>I have been coding from past {ptime} year(s)</p>
         </div>
