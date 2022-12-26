@@ -15,7 +15,7 @@ const Layout = () => {
               About
             </Link>
           </li>
-          <li className="nav-items">
+          {/* <li className="nav-items">
             <Link className="nav-text" to="/gallery">
               Gallery
             </Link>
@@ -24,7 +24,7 @@ const Layout = () => {
             <Link className="nav-text" to="/contact">
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <Outlet />

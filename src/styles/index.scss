@@ -1,96 +1,125 @@
 $darkNav: #262f41;
 $darkBg: #1a202c;
 $white: #ffffff;
+$greenx: rgb(0, 255, 170);
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Poppins;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
 }
 
 body {
-
-    background: $darkBg;
-    color: $white;
+  background: $darkBg;
+  color: $white;
 }
 
 .link {
-    color: white;
+  color: white;
 }
 
 .link:hover {
-    color: red;
+  color: red;
 }
 
 .nav {
-    border-radius: 50px;
-    background-color: $darkNav;
-    margin: 10px;
-    padding: 10px;
+  border-radius: 50px;
+  background-color: $darkNav;
+  margin: 10px;
+  padding: 10px;
 
-    .nav-lists {
-        display: flex;
-        justify-content: space-around;
-        // text-indent: 50px;
-        list-style-type: none;
+  .nav-lists {
+    display: flex;
+    justify-content: space-around;
+    // text-indent: 50px;
+    list-style-type: none;
 
-        .nav-items {
-            margin: 4px;
-        }
-
-        .nav-text {
-            user-select: none;
-            color: $white;
-            text-decoration: none;
-        }
-
-        .nav-text:hover {
-            color: red;
-        }
+    .nav-items {
+      margin: 4px;
     }
+
+    .nav-text {
+      user-select: none;
+      color: $white;
+      text-decoration: none;
+    }
+
+    .nav-text:hover {
+      color: red;
+    }
+  }
 }
 
 .home {
-    .hero {
-        display: flex;
-        margin: 0;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        max-width: 700px;
-        width: 100%;
-        margin: auto;
-        height: 10vh;
-        align-items: center;
-        justify-content: center;
-
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-
-    }
-}
-
-.about {
+  .hero {
+    display: flex;
     margin: 0;
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
 
-    .about-title {
-        font-weight: bold;
+  .container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.nopage {
+  .info {
+    display: flex;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.about {
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  .about-title {
+    font-weight: bold;
+    color: burlywood;
+  }
+
+  .about-p {
+    justify-content: center;
+    color: $white;
+
+    p {
+      text-align: center;
     }
-
-    .about-p {
-        justify-content: center;
-        color: aliceblue;
-
-
+    .name-span {
+      font-weight: bold;
     }
-
+  }
 }
