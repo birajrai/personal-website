@@ -2,6 +2,8 @@ $darkNav: #262f41;
 $darkBg: #1a202c;
 $white: #ffffff;
 $greenx: rgb(0, 255, 170);
+$lightin: #c0cad9;
+$lightin2: #c4cfde;
 
 * {
   padding: 0;
@@ -108,18 +110,28 @@ body {
 
   .about-title {
     font-weight: bold;
-    color: burlywood;
+    color: $lightin;
   }
 
-  .about-p {
+  .about-section {
     justify-content: center;
     color: $white;
+
+    .description {
+      font-size: 16px;
+      line-height: 30px;
+      color: $lightin2;
+      padding-right: 30%;
+      padding-left: 30%;
+      opacity: 0.9;
+    }
 
     p {
       text-align: center;
     }
-    .name-span {
-      font-weight: bold;
+
+    .name {
+      color: crimson;
     }
   }
 }
