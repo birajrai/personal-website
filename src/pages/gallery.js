@@ -1,4 +1,3 @@
-// src/pages/gallery.js
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 
@@ -9,8 +8,13 @@ export default function Gallery() {
                 <title>Gallery | My Website</title>
                 <meta name="description" content="Explore our gallery." />
             </Head>
-            <h1 className="text-3xl font-bold">Gallery</h1>
-            <p className="mt-4">Explore our gallery.</p>
+            <div className="relative w-full" style={{ height: "calc(100vh - 100px)" }}>
+                <img
+                    src="https://backend.nabarajrai.com.np/wp-content/uploads/2024/11/kd-coming-soon.png"
+                    alt="Coming Soon!"
+                    className="object-cover w-full h-full"
+                />
+            </div>
         </Layout>
     )
 }
