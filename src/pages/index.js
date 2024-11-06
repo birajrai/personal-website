@@ -81,8 +81,7 @@ const Home = () => {
                                 />
                             </span>
                         </h1>
-                        {" "}
-                        <p className="text-base text-gray-600 mb-4 max-w-lg mx-auto md:max-w-none">
+                        <p className="text-base text-gray-600 mb-4">
                             I specialize in creating fast, responsive, and scalable web applications.
                         </p>
                         <p className="text-xs text-gray-600">
