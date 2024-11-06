@@ -5,9 +5,9 @@ import { faHome, faInfoCircle, faImages, faBars, faTimes } from '@fortawesome/fr
 import { faFacebook, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const menuItems = [
-    { name: 'Home', href: '/', icon: faHome },
-    { name: 'About', href: '/about', icon: faInfoCircle },
-    { name: 'Gallery', href: '/gallery', icon: faImages }
+    { name: 'Home', href: '/', icon: faHome, color: 'text-blue-600' },
+    { name: 'About', href: '/about', icon: faInfoCircle, color: 'text-green-600' },
+    { name: 'Gallery', href: '/gallery', icon: faImages, color: 'text-yellow-500' }
 ];
 
 const socialLinks = [
@@ -34,7 +34,7 @@ export default function Header() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="flex items-center text-gray-900 hover:text-[#8f40da] transition-colors duration-300"
+                                className={`flex items-center ${item.color} hover:text-opacity-80 transition-colors duration-300`}
                             >
                                 <FontAwesomeIcon icon={item.icon} className="mr-2 text-xl" />
                                 {item.name}
@@ -85,7 +85,7 @@ export default function Header() {
                             <li key={item.name}>
                                 <Link
                                     href={item.href}
-                                    className="flex items-center text-xl hover:text-[#8f40da] transition-colors duration-300"
+                                    className={`flex items-center text-xl ${item.color} hover:text-opacity-80 transition-colors duration-300`}
                                     onClick={toggleMenu}
                                 >
                                     <FontAwesomeIcon icon={item.icon} className="mr-2" />
