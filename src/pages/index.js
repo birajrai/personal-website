@@ -87,7 +87,7 @@ const Home = () => {
                         </p>
                         <p className="text-xs text-gray-600">
                             {/* Only show loading for the countdown */}
-                            {isLoading ? 'My next birthday is in ...' : `My next birthday is in ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, and ${timeLeft.seconds} seconds! 🎉`}
+                            {isLoading ? 'My next birthday is in x days, x hours, x minutes, and x seconds! 🎉' : `My next birthday is in ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, and ${timeLeft.seconds} seconds! 🎉`}
                         </p>
                         <a
                             href="/about"
