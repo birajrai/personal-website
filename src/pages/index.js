@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <Layout>
             <Head>
-                <title>Home | My Website</title>
+                <title>Biraj Rai | Skilled Software </title>
                 <meta name="description" content="Welcome to the home page of my website." />
             </Head>
             <div className="wrapper px-4 py-12">
