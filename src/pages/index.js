@@ -52,7 +52,7 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
 
-            <div className="flex items-start justify-start bg-gray-50 text-gray-900 overflow-hidden min-h-screen">
+            <div className="flex items-start justify-start bg-gray-50 text-gray-900 overflow-hidden">
                 <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-start items-start space-y-8 md:space-y-0">
                     <div className="flex flex-col items-start text-center md:text-left space-y-4">
                         <span className="text-xs font-medium text-gray-600">Hello, I'm</span>
