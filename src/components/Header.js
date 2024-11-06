@@ -31,7 +31,11 @@ export default function Header() {
                 <div className="hidden md:flex space-x-4">
                     <div className="flex space-x-4">
                         {menuItems.map((item) => (
-                            <Link key={item.name} href={item.href} className="flex items-center text-gray-900 hover:text-blue-600">
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                className="flex items-center text-gray-900 hover:text-[#8f40da] transition-colors duration-300"
+                            >
                                 <FontAwesomeIcon icon={item.icon} className="mr-2 text-xl" />
                                 {item.name}
                             </Link>
@@ -45,7 +49,7 @@ export default function Header() {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`text-2xl ${social.color} hover:text-opacity-80`}
+                                className={`text-2xl ${social.color} hover:text-opacity-80 transition-all duration-300`}
                             >
                                 <FontAwesomeIcon icon={social.icon} />
                             </a>
@@ -79,7 +83,11 @@ export default function Header() {
                     <ul className="space-y-4">
                         {menuItems.map((item) => (
                             <li key={item.name}>
-                                <Link href={item.href} className="flex items-center text-xl hover:text-blue-600" onClick={toggleMenu}>
+                                <Link
+                                    href={item.href}
+                                    className="flex items-center text-xl hover:text-[#8f40da] transition-colors duration-300"
+                                    onClick={toggleMenu}
+                                >
                                     <FontAwesomeIcon icon={item.icon} className="mr-2" />
                                     {item.name}
                                 </Link>
@@ -94,7 +102,7 @@ export default function Header() {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`text-2xl ${social.color} hover:text-opacity-80 mr-4`}
+                                className={`text-2xl ${social.color} hover:text-opacity-80 mr-4 transition-all duration-300`}
                             >
                                 <FontAwesomeIcon icon={social.icon} />
                             </a>
