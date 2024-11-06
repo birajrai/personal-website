@@ -59,7 +59,7 @@ const Home = () => {
                     <div className="flex flex-col items-center mb-4 md:mb-0">
                         <div className="w-40 h-40 bg-white rounded-full shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
                             <img
-                                src="/path-to-your-image.jpg"
+                                src="https://backend.nabarajrai.com.np/wp-content/uploads/2024/11/kd-coming-soon.png"
                                 alt="Portrait of Biraj Rai, a software developer based in Bagmati, Nepal"
                                 className="object-cover w-full h-full"
                             />
