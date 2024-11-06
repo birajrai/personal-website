@@ -5,9 +5,9 @@ import { faHome, faInfoCircle, faImages, faBars, faTimes } from '@fortawesome/fr
 import { faFacebook, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const menuItems = [
-    { name: 'Home', href: '/', icon: "" },
-    { name: 'About', href: '/about', icon: "" },
-    { name: 'Gallery', href: '/gallery', icon: "" }
+    { name: 'Home', href: '/', icon: faHome },
+    { name: 'About', href: '/about', icon: faInfoCircle },
+    { name: 'Gallery', href: '/gallery', icon: faImages }
 ];
 
 const socialLinks = [
