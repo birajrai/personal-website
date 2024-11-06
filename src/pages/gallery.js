@@ -5,7 +5,7 @@ export default function Gallery() {
     return (
         <Layout>
             <Head>
-                <title>Gallery | My Website</title>
+                <title>Gallery | Biraj Rai</title>
                 <meta name="description" content="Explore our gallery." />
             </Head>
             <div className="relative w-full" style={{ height: "calc(100vh - 100px)" }}>

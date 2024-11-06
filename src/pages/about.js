@@ -5,7 +5,7 @@ export default function About() {
     return (
         <Layout>
             <Head>
-                <title>About | My Website</title>
+                <title>About | Biraj Rai</title>
                 <meta name="description" content="Learn more about us on this page." />
             </Head>
 
