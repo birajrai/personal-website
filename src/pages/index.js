@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import { ReactTyped } from 'react-typed';
+import { useState, useEffect } from 'react';
 
-// Utility function to calculate days until next birthday
-const calculateDaysUntilBirthday = (birthDate) => {
+// Utility function to calculate time until next birthday
+const calculateTimeUntilBirthday = (birthDate) => {
     const today = new Date();
     const birthDateObj = new Date(birthDate);
 
@@ -15,13 +16,33 @@ const calculateDaysUntilBirthday = (birthDate) => {
         birthDateObj.setFullYear(today.getFullYear() + 1);
     }
 
-    const timeDifference = birthDateObj.getTime() - today.getTime();
-    return Math.ceil(timeDifference / (1000 * 3600 * 24));
+    const timeDifference = birthDateObj - today;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(timeDifference / (1000 * 3600 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 3600 * 24)) / (1000 * 3600));
+    const minutes = Math.floor((timeDifference % (1000 * 3600)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    return { days, hours, minutes, seconds };
 };
 
 const Home = () => {
+    const [timeLeft, setTimeLeft] = useState(null);
+    const [isLoading, setIsLoading] = useState(true); // Track loading state for the countdown
     const birthDate = '2006-10-31'; // Your actual birthdate
-    const daysLeft = calculateDaysUntilBirthday(birthDate);
+
+    useEffect(() => {
+        // Update the time every second
+        const interval = setInterval(() => {
+            const time = calculateTimeUntilBirthday(birthDate);
+            setTimeLeft(time);
+            setIsLoading(false); // Set loading to false once time is calculated
+        }, 1000);
+
+        // Clear the interval on component unmount
+        return () => clearInterval(interval);
+    }, [birthDate]);
 
     return (
         <Layout>
@@ -49,22 +70,24 @@ const Home = () => {
                     <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
                         <span className="text-xs font-medium text-gray-600">Hello, I'm</span>
                         <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-                            Biraj Rai
+                            Biraj Rai{" "}
+                            <span className="text-gray-600">
+                                <ReactTyped
+                                    strings={['a Software Developer', 'based in Bagmati, Nepal']}
+                                    typeSpeed={80}
+                                    backSpeed={40}
+                                    backDelay={1000}
+                                    loop
+                                />
+                            </span>
                         </h1>
-                        <span className="text-gray-600">
-                            <ReactTyped
-                                strings={['a Software Developer', 'based in Bagmati, Nepal']}
-                                typeSpeed={80}
-                                backSpeed={40}
-                                backDelay={1000}
-                                loop
-                            />
-                        </span>
+                        {" "}
                         <p className="text-base text-gray-600 mb-4 max-w-lg mx-auto md:max-w-none">
                             I specialize in creating fast, responsive, and scalable web applications.
                         </p>
                         <p className="text-xs text-gray-600">
-                            My next birthday is in {daysLeft} days! 🎉
+                            {/* Only show loading for the countdown */}
+                            {isLoading ? 'My next birthday is in ...' : `My next birthday is in ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, and ${timeLeft.seconds} seconds! 🎉`}
                         </p>
                         <a
                             href="/about"
