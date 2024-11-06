@@ -52,22 +52,9 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
 
-            <div className="flex items-center justify-center bg-gray-50 text-gray-900 overflow-hidden">
-                <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row-reverse justify-between items-center space-y-8 md:space-y-0">
-
-                    {/* Left Column - Image */}
-                    <div className="flex flex-col items-center mb-4 md:mb-0">
-                        <div className="w-40 h-40 bg-white rounded-full shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                            <img
-                                src="https://backend.nabarajrai.com.np/wp-content/uploads/2024/11/kd-coming-soon.png"
-                                alt="Portrait of Biraj Rai, a software developer based in Bagmati, Nepal"
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Right Column - Intro */}
-                    <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+            <div className="flex items-start justify-start bg-gray-50 text-gray-900 overflow-hidden min-h-screen">
+                <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-start items-start space-y-8 md:space-y-0">
+                    <div className="flex flex-col items-start text-center md:text-left space-y-4">
                         <span className="text-xs font-medium text-gray-600">Hello, I'm</span>
                         <h1 className="text-3xl md:text-4xl font-bold leading-tight">
                             Biraj Rai{" "}
@@ -86,7 +73,10 @@ const Home = () => {
                         </p>
                         <p className="text-xs text-gray-600">
                             {/* Only show loading for the countdown */}
-                            {isLoading ? 'My next birthday is in x days, x hours, x minutes, and x seconds! 🎉' : `My next birthday is in ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, and ${timeLeft.seconds} seconds! 🎉`}
+                            {isLoading
+                                ? 'My next birthday is in x days, x hours, x minutes, and x seconds! 🎉'
+                                : `My next birthday is in ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, and ${timeLeft.seconds} seconds! 🎉`
+                            }
                         </p>
                         <a
                             href="/about"
