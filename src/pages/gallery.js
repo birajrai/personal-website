@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Layout from '@/components/Layout'
 
 export default function Gallery() {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>Gallery | Biraj Rai</title>
                 <meta name="description" content="Explore our gallery." />
@@ -14,7 +13,6 @@ export default function Gallery() {
                     alt="Coming Soon!"
                     className="object-cover w-full h-full"
                 />
-            </div>
-        </Layout>
+            </div></>
     )
 }
