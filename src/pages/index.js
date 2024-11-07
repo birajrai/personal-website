@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Layout from '@/components/Layout';
 import { ReactTyped } from 'react-typed';
 import { useState, useEffect } from 'react';
 
@@ -45,7 +44,7 @@ const Home = () => {
     }, [birthDate]);
 
     return (
-        <Layout>
+        <>
             <Head>
                 <title>Biraj Rai | Software Developer</title>
                 <meta name="description" content="Welcome to my personal website!" />
@@ -87,7 +86,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     );
 };
 
